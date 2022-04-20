@@ -73,7 +73,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-width: 50vw;
-  min-height: 50vh;
+  min-height: 300px;
 }
 
 .container form input {
@@ -162,7 +162,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 50vw;
-  min-height: 50vh;
+  min-height: 300px;
 }
 
 .loader svg path,
@@ -178,9 +178,9 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
   min-width: 50vw;
-  min-height: fit-content;
+  max-height: 70vh;
   background-color: var(--second-color);
   border-radius: 1rem;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
@@ -229,8 +229,7 @@ body {
 
 .forcast-container .current-day .left .country-name {
   color: var(--fourth-color);
-  margin-top: -1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .forcast-container .current-day .left .day {
@@ -244,12 +243,12 @@ body {
 }
 
 .forcast-container .current-day .left img {
-  margin-top: 1rem;
-  max-width: 40%;
+  margin: 0.5rem 0;
+  max-width: 30%;
 }
 
 .forcast-container .current-day .left .describe {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--fourth-color);
 }
 
@@ -268,13 +267,12 @@ body {
 
 .forcast-container .current-day .temp {
   color: var(--fifth-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .forcast-container .current-day .min-max-temp {
   color: var(--fourth-color);
-  font-size: 1.5rem;
-  margin-top: -1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 767px) {
@@ -298,20 +296,8 @@ body {
   }
 }
 
-.forcast-container .current-day .humidity {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
-.forcast-container .current-day .visibility {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
+.forcast-container .current-day .humidity,
+.forcast-container .current-day .visibility,
 .forcast-container .current-day .wind {
   display: flex;
   justify-content: space-between;
@@ -327,6 +313,7 @@ body {
 .forcast-container .upcoming .box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding: 0.1rem;
 }
 
 .forcast-container .upcoming .box .next-day {
@@ -352,10 +339,6 @@ body {
   margin-top: 0.5rem;
 }
 
-.forcast-container .upcoming .box .next-temp p:last-of-type {
-  margin-top: -0.5rem;
-}
-
 /* End Forcast */
 
 /* Start Footer */
@@ -369,7 +352,6 @@ body {
 
 .footer .copyright {
   color: var(--second-color);
-  font-size: 1rem;
   font-weight: 600;
 }
 
